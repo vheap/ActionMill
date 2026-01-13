@@ -14,6 +14,6 @@ namespace ActionMill.Options
         public RetryOptions DefaultRetryPolicy { get; init; } = RetryOptions.None;
         public TimeoutOptions DefaultTimeoutPolicy { get; init; } = TimeoutOptions.None;
         public IActionMillLogger Logger { get; init; } = Logging.NullActionMillLogger.Instance;
-        public IHistoryLog HistorySink { get; init; } = History.NullHistoryLog.Instance;
+        public IHistoryLog HistoryLog { get; init; } = History.NullHistoryLog.Instance;
     }
 }
